@@ -10,8 +10,13 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
     "nuxt": "^3.15.0",
+    "twilio": "^5.4.0",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.2"
   }
 }

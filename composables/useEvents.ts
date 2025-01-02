@@ -6,7 +6,7 @@ const events = ref([
     id: 1,
     title: 'Community Cleanup',
     description: 'Join us for a community cleanup event!',
-    date: '2024-12-15',
+    date: '2025-05-01',
     time: '10:00 AM',
     location: 'Central Park',
   },

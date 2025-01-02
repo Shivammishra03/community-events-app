@@ -17,9 +17,23 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 import { useEvents } from '@/composables/useEvents';
 import { getCountdown } from '@/utils/countdown';
 
 const countdown = (eventDate) => getCountdown(eventDate);
 const { events } = useEvents();
+
+// onMounted(() => {
+//     if(process.client) {
+//       const interval = setInterval(() => {
+//         getCountdown();
+//       }, 1000);
+
+//       // Clear interval when component is unmounted
+//       onUnmounted(() => {
+//         clearInterval(interval);
+//       });
+//     }
+//   });
 </script>
