@@ -43,3 +43,20 @@ const createEvent = () => {
   newEvent.value = { title: '', description: '', date: '', time: '', location: '' };
 };
 </script>
+<!-- 
+<template>
+  <div class="p-6 max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6">Welcome to Community Events</h1>
+    <h2 class="text-2xl font-semibold">Upcoming Events</h2>
+    <div class="grid gap-4 mt-6">
+      <EventCard v-for="event in events" :key="event.id" :event="event" />
+    </div>
+  </div>
+</template>
+
+<script setup>
+import EventCard from '@/components/EventCard.vue';
+import { useEvents } from '@/composables/useEvents';
+
+const { events } = useEvents();
+</script> -->
